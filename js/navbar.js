@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             placeholder.innerHTML = await response.text();
             const currentLink = Array.from(placeholder.querySelectorAll('.nav-menu a'))
-                .find((link) => link.getAttribute('href') === currentPage);
+                .find((link) => new URL(link.href).pathname.split('/').pop() === currentPage);
 
             currentLink?.setAttribute('aria-current', 'page');
         } catch (error) {

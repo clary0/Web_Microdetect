@@ -1,0 +1,43 @@
+name: Pipeline MicroDetect
+
+on:
+  push:
+    branches:
+      - develop
+
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  verificar:
+    name: Verificar proyecto
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar estructura
+        run: |
+          test -f index.html
+          test -f css/styles.css
+          test -f js/chatbot.js
+          test -f js/navbar.js
+          test -f componentes/chatbot.html
+          test -f componentes/navbar.html
+
+      - name: Verificar páginas HTML
+        run: |
+          test -f views/contactanos.html
+          test -f views/descargar.html
+          test -f views/quienes-somos.html
+          test -f views/servicios.html
+
+      - name: Verificar sintaxis JavaScript
+        run: |
+          node --check js/chatbot.js
+          node --check js/navbar.js
+
+      - name: Finalizar pipeline
+        run: echo "Verificaciones de MicroDetect completadas"
