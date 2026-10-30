@@ -50,55 +50,55 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (/ufc|dilucion|unidades formadoras/.test(normalized)) {
                 return {
                     text: 'UFC/mL significa unidades formadoras de colonias por mililitro. Microdetect presenta el cálculo a partir del conteo, la dilución y el volumen sembrado.',
-                    link: { href: 'servicios.html', label: 'Ver servicios' }
+                    link: { href: 'views/servicios.html', label: 'Ver servicios' }
                 };
             }
 
             if (/registro|crear cuenta|registrarme|iniciar sesion|login|contrasena|acceso/.test(normalized)) {
                 return {
                     text: 'Este sitio ya no ofrece registro ni inicio de sesión. Para consultar el acceso a la aplicación Microdetect, contáctanos.',
-                    link: { href: 'contactanos.html', label: 'Consultar acceso a la app' }
+                    link: { href: 'views/contactanos.html', label: 'Consultar acceso a la app' }
                 };
             }
 
             if (/quienes somos|que es microdetect|microdetect|sobre nosotros/.test(normalized)) {
                 return {
                     text: 'Microdetect es una aplicación de apoyo al análisis de fotografías de placas Petri, el conteo de colonias y la organización de resultados microbiológicos.',
-                    link: { href: 'quienes-somos.html', label: 'Conocer quiénes somos' }
+                    link: { href: 'views/quienes-somos.html', label: 'Conocer quiénes somos' }
                 };
             }
 
             if (/contacto|hablar|soporte|persona|ayuda/.test(normalized)) {
                 return {
                     text: 'Puedes enviarnos un mensaje desde la página de contacto.',
-                    link: { href: 'contactanos.html', label: 'Ir a Contacto' }
+                    link: { href: 'views/contactanos.html', label: 'Ir a Contacto' }
                 };
             }
 
             if (/descargar|descarga|app|aplicacion/.test(normalized)) {
                 return {
                     text: 'La descarga para Android aparecerá aquí cuando esté listo el instalador de Microdetect.',
-                    link: { href: 'descargar.html', label: 'Ver descarga para Android' }
+                    link: { href: 'views/descargar.html', label: 'Ver descarga para Android' }
                 };
             }
 
             if (/historial|reporte|pdf|guardar/.test(normalized)) {
                 return {
                     text: 'La sección de servicios describe el historial de muestras y la generación de reportes en PDF.',
-                    link: { href: 'servicios.html', label: 'Ver servicios' }
+                    link: { href: 'views/servicios.html', label: 'Ver servicios' }
                 };
             }
 
             if (/servicio|que hace|microdetect|analisis|muestra|foto|placa|colonia|empezar/.test(normalized)) {
                 return {
                     text: 'Microdetect está pensado para analizar fotografías de placas Petri, apoyar el conteo de colonias y organizar resultados microbiológicos.',
-                    link: { href: 'servicios.html', label: 'Conocer servicios' }
+                    link: { href: 'views/servicios.html', label: 'Conocer servicios' }
                 };
             }
 
             return {
                 text: 'Puedo ayudarte con Microdetect, servicios, UFC/mL, acceso a la app o contacto. ¿Sobre cuál tema quieres saber?',
-                link: { href: 'servicios.html', label: 'Explorar servicios' }
+                link: { href: 'views/servicios.html', label: 'Explorar servicios' }
             };
         }
 
