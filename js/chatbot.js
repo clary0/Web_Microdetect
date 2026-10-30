@@ -54,17 +54,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 };
             }
 
-            if (/registro|crear cuenta|registrarme|cuenta/.test(normalized)) {
+            if (/registro|crear cuenta|registrarme|iniciar sesion|login|contrasena|acceso/.test(normalized)) {
                 return {
-                    text: 'Puedes crear una cuenta desde el formulario de registro para acceder a tu espacio de trabajo.',
-                    link: { href: 'registro.html', label: 'Crear cuenta' }
+                    text: 'Este sitio ya no ofrece registro ni inicio de sesión. Para consultar el acceso a la aplicación Microdetect, contáctanos.',
+                    link: { href: 'contactanos.html', label: 'Consultar acceso a la app' }
                 };
             }
 
-            if (/iniciar sesion|login|contrasena|acceso/.test(normalized)) {
+            if (/quienes somos|que es microdetect|microdetect|sobre nosotros/.test(normalized)) {
                 return {
-                    text: 'Puedes entrar con tu correo y contraseña desde la página de inicio de sesión.',
-                    link: { href: 'login.html', label: 'Iniciar sesión' }
+                    text: 'Microdetect es una aplicación de apoyo al análisis de fotografías de placas Petri, el conteo de colonias y la organización de resultados microbiológicos.',
+                    link: { href: 'quienes-somos.html', label: 'Conocer quiénes somos' }
                 };
             }
 
@@ -72,6 +72,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return {
                     text: 'Puedes enviarnos un mensaje desde la página de contacto.',
                     link: { href: 'contactanos.html', label: 'Ir a Contacto' }
+                };
+            }
+
+            if (/descargar|descarga|app|aplicacion/.test(normalized)) {
+                return {
+                    text: 'La descarga para Android aparecerá aquí cuando esté listo el instalador de Microdetect.',
+                    link: { href: 'descargar.html', label: 'Ver descarga para Android' }
                 };
             }
 
@@ -90,7 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             return {
-                text: 'Puedo ayudarte con servicios, UFC/mL, registro, inicio de sesión o contacto. ¿Sobre cuál tema quieres saber?',
+                text: 'Puedo ayudarte con Microdetect, servicios, UFC/mL, acceso a la app o contacto. ¿Sobre cuál tema quieres saber?',
                 link: { href: 'servicios.html', label: 'Explorar servicios' }
             };
         }
