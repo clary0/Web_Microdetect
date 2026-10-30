@@ -21,9 +21,9 @@ jobs:
       - name: Verificar estructura
         run: |
           test -f index.html
-          test -f CSS/styles.css
-          test -f JS/chatbot.js
-          test -f JS/navbar.js
+          test -f css/styles.css
+          test -f js/chatbot.js
+          test -f js/navbar.js
           test -f componentes/chatbot.html
           test -f componentes/navbar.html
 
@@ -36,8 +36,8 @@ jobs:
 
       - name: Verificar sintaxis JavaScript
         run: |
-          node --check JS/chatbot.js
-          node --check JS/navbar.js
+          node --check js/chatbot.js
+          node --check js/navbar.js
 
       - name: Finalizar pipeline
         run: echo "Verificaciones de MicroDetect completadas"
