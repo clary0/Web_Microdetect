@@ -14,6 +14,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .find((link) => new URL(link.href).pathname.split('/').pop() === currentPage);
 
             currentLink?.setAttribute('aria-current', 'page');
+
+            const toggle = placeholder.querySelector('.nav-toggle');
+            const menu = placeholder.querySelector('.nav-menu');
+
+            toggle.addEventListener('click', () => {
+                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!isExpanded));
+                toggle.setAttribute('aria-label', isExpanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+                menu.classList.toggle('is-open', !isExpanded);
+            });
+
+            menu.addEventListener('click', (event) => {
+                if (event.target.closest('a')) {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+                    menu.classList.remove('is-open');
+                }
+            });
         } catch (error) {
             console.error('No se pudo cargar la barra de navegación.', error);
         }

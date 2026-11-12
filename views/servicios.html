@@ -13,8 +13,7 @@
 <body>
     <div data-navbar></div>
 
-    <section class="contenedor">
-        <p class="eyebrow section-eyebrow">UNA SOLA PLATAFORMA, TODO EL FLUJO</p>
+    <section class="contenedor servicios-page">
         <h1 class="titulo">Resultados que respaldan tu laboratorio</h1>
         <div class="servicios">
             <div class="card">
@@ -39,19 +38,56 @@
                 <p>Cada muestra queda guardada con su imagen, fecha y datos clave. Además, puedes generar reportes en PDF para documentación, auditorías o control interno de laboratorio.</p>
             </div>
         </div>
+
+        <section class="plans-section" aria-labelledby="plans-title">
+            <div class="plans-heading">
+                <p class="eyebrow section-eyebrow">PLANES PARA CADA NECESIDAD</p>
+                <h2 id="plans-title" class="titulo">Elige cómo trabajar con Microdetect</h2>
+                <p>Conoce las opciones disponibles en la aplicación. La información y las funciones de cada plan se muestran aquí; la contratación se realiza desde la app.</p>
+            </div>
+            <div class="plans-grid">
+                <article class="plan-card">
+                    <h3>Básico</h3>
+                    <p class="plan-price">Gratis</p>
+                    <ul>
+                        <li>Conteo automático de colonias</li>
+                        <li>Crear reportes nuevos</li>
+                    </ul>
+                    <a class="hero-button hero-button-primary" href="views/descargar.html">Conocer la app</a>
+                </article>
+                <article class="plan-card">
+                    <h3>Intermedio</h3>
+                    <p class="plan-price">$49 <span>MXN/mes</span></p>
+                    <ul>
+                        <li>Todo lo del plan Básico</li>
+                        <li>Historial de reportes guardados</li>
+                    </ul>
+                    <a class="hero-button hero-button-primary" href="views/descargar.html">Conocer la app</a>
+                </article>
+                <article class="plan-card plan-card-premium">
+                    <h3>Premium</h3>
+                    <p class="plan-price">$99 <span>MXN/mes</span></p>
+                    <ul>
+                        <li>Todo lo del plan Intermedio</li>
+                        <li>Gráficas y estadísticas</li>
+                        <li>Análisis con Inteligencia Artificial</li>
+                    </ul>
+                    <a class="hero-button hero-button-primary" href="views/descargar.html">Conocer la app</a>
+                </article>
+            </div>
+        </section>
     </section>
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-main">
                 <div class="footer-brand-block">
-                    <a class="footer-brand" href="index.html"><img src="img/Logo1.jpeg" alt="">Microdetect</a>
+                    <a class="footer-brand" href="index.html"><img src="img/Logo1.png" alt="">Microdetect</a>
                     <p>Tecnología que acompaña la ciencia. Herramientas digitales para apoyar el análisis microbiológico.</p>
                 </div>
                 <div class="footer-link-block">
                     <h2>Explora</h2>
                     <nav aria-label="Enlaces del pie de página">
                         <a href="index.html">Inicio</a>
-                        <a href="views/quienes-somos.html">Quiénes somos</a>
                         <a href="views/servicios.html">Servicios</a>
                         <a href="views/descargar.html">Descargar app</a>
                     </nav>
@@ -59,7 +95,10 @@
                 <div class="footer-contact-block">
                     <h2>¿Tienes dudas?</h2>
                     <p>Estamos aquí para ayudarte a conocer Microdetect.</p>
-                    <a class="footer-contact-link" href="views/contactanos.html">Contáctanos <span aria-hidden="true">→</span></a>
+                    <div class="footer-contact-actions">
+                        <a class="footer-contact-link" href="views/quienes-somos.html">Quiénes somos</a>
+                        <a class="footer-contact-link" href="views/contactanos.html">Contáctanos <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">

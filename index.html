@@ -1,157 +1,362 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+
+    <title>Inicio | Microdetect</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
     <script src="js/navbar.js" defer></script>
     <script src="js/chatbot.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
+
 <body>
+
 <div id="app">
+
+    <!-- Barra de navegación -->
     <div data-navbar></div>
 
+    <!-- Sección principal -->
     <section class="contenedor home-hero">
+
         <div class="hero-copy">
-            <p class="eyebrow">MICROBIOLOGÍA MÁS INTELIGENTE</p>
-            <h1 class="titulo">Sistema de conteo de colonias bacterianas</h1>
-            <p class="hero-description">Transforma una fotografía de tu placa Petri en datos claros, consistentes y listos para tomar decisiones.</p>
+
+            <p class="hero-eyebrow">MICROBIOLOGÍA MÁS INTELIGENTE</p>
+
+            <h1 class="titulo">
+                Sistema de Colonias Bacterianas Microdetect
+            </h1>
+
+            <p class="hero-description">
+                Transforma una fotografía de tu placa Petri en datos claros,
+                consistentes y listos para tomar decisiones.
+            </p>
+
             <div class="hero-actions">
-                <a class="hero-button hero-button-primary" href="views/descargar.html">Descargar app Android</a>
-                <a class="hero-button hero-button-secondary" href="views/servicios.html">Conocer servicios</a>
+
+                <a
+                    class="hero-button hero-button-primary"
+                    href="views/descargar.html"
+                >
+                    Descargar app Android
+                </a>
+
+                <a
+                    class="hero-button hero-button-secondary"
+                    href="views/servicios.html"
+                >
+                    Conocer servicios
+                </a>
+
             </div>
         </div>
- 
 
-    <!-- CARRUSEL -->
-<div id="bioCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <!-- Carrusel de imágenes -->
+        <div id="bioCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
 
-    <!-- Indicadores -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#bioCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#bioCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#bioCarousel" data-bs-slide-to="2"></button>
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+
+                <button
+                    type="button"
+                    data-bs-target="#bioCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Imagen 1"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#bioCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Imagen 2"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#bioCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Imagen 3"
+                ></button>
+
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img
+                        src="img/ima.jpg"
+                        class="d-block w-100"
+                        alt="Placa Petri analizada en laboratorio"
+                    >
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="img/ima1.jpg"
+                        class="d-block w-100"
+                        alt="Análisis microbiológico de una muestra"
+                    >
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="img/ima2.jpg"
+                        class="d-block w-100"
+                        alt="Registro de resultados de laboratorio"
+                    >
+                </div>
+
+            </div>
+
+            <!-- Controles -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#bioCarousel"
+                data-bs-slide="prev"
+                aria-label="Imagen anterior"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#bioCarousel"
+                data-bs-slide="next"
+                aria-label="Imagen siguiente"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Secciones informativas -->
+    <div class="home-sections">
+
+        <!-- Beneficios -->
+        <section
+            class="impact-section"
+            aria-label="Beneficios de Microdetect"
+        >
+
+            <div class="impact-intro">
+
+                <p class="hero-eyebrow">
+                    DEL LABORATORIO A LA DECISIÓN
+                </p>
+
+                <h2>Más claridad en cada muestra</h2>
+
+                <p>
+                    Una experiencia pensada para que tu equipo trabaje con
+                    datos ordenados, resultados repetibles y menos tareas manuales.
+                </p>
+
+            </div>
+
+            <div class="impact-list">
+
+                <article class="impact-item">
+                    <strong>01</strong>
+                    <h3>Rápido</h3>
+                    <p>
+                        Convierte una imagen en un conteo útil en segundos.
+                    </p>
+                </article>
+
+                <article class="impact-item">
+                    <strong>02</strong>
+                    <h3>Preciso</h3>
+                    <p>
+                        Reduce errores y mantiene un criterio consistente.
+                    </p>
+                </article>
+
+                <article class="impact-item">
+                    <strong>03</strong>
+                    <h3>Trazable</h3>
+                    <p>
+                        Conserva muestras, fechas y reportes en un solo lugar.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Funcionamiento -->
+        <section
+            class="process-section"
+            aria-label="Cómo funciona Microdetect"
+        >
+
+            <div class="process-heading">
+
+                <p class="hero-eyebrow">
+                    SIMPLE DESDE EL PRIMER DÍA
+                </p>
+
+                <h2>Tu análisis en tres pasos</h2>
+
+            </div>
+
+            <div class="process-grid">
+
+                <article class="process-step">
+
+                    <span class="process-number">01</span>
+
+                    <div>
+                        <h3>Sube una imagen</h3>
+                        <p>
+                            Captura tu placa Petri y carga la fotografía
+                            en la plataforma.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="process-step">
+
+                    <span class="process-number">02</span>
+
+                    <div>
+                        <h3>Deja que Microdetect analice</h3>
+                        <p>
+                            El sistema identifica las colonias y organiza
+                            el conteo automáticamente.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="process-step">
+
+                    <span class="process-number">03</span>
+
+                    <div>
+                        <h3>Obtén una respuesta clara</h3>
+                        <p>
+                            Consulta UFC/mL, guarda la muestra y genera
+                            un reporte cuando lo necesites.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </div>
 
-    <!-- Slides -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/ima.jpg" class="d-block w-100" alt="Placa Petri analizada en laboratorio">
-
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/ima1.jpg" class="d-block w-100" alt="Análisis microbiológico de una muestra">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/ima2.jpg" class="d-block w-100" alt="Registro de resultados de laboratorio">
-        </div>
-    </div>
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#bioCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#bioCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
 </div>
-</section>
 
-<div class="home-sections">
-<section class="impact-section" aria-label="Beneficios de BioConteo">
-    <div class="impact-intro">
-        <p class="eyebrow">DEL LABORATORIO A LA DECISIÓN</p>
-        <h2>Más claridad en cada muestra</h2>
-        <p>Una experiencia pensada para que tu equipo trabaje con datos ordenados, resultados repetibles y menos tareas manuales.</p>
-    </div>
-    <div class="impact-list">
-        <article class="impact-item">
-            <strong>01</strong>
-            <h3>Rápido</h3>
-            <p>Convierte una imagen en un conteo útil en segundos.</p>
-        </article>
-        <article class="impact-item">
-            <strong>02</strong>
-            <h3>Preciso</h3>
-            <p>Reduce errores y mantiene un criterio consistente.</p>
-        </article>
-        <article class="impact-item">
-            <strong>03</strong>
-            <h3>Trazable</h3>
-            <p>Conserva muestras, fechas y reportes en un solo lugar.</p>
-        </article>
-    </div>
-</section>
-
-<section class="process-section" aria-label="Cómo funciona BioConteo">
-    <div class="process-heading">
-        <p class="eyebrow">SIMPLE DESDE EL PRIMER DÍA</p>
-        <h2>Tu análisis en tres pasos</h2>
-    </div>
-    <div class="process-grid">
-        <article class="process-step">
-            <span class="process-number">01</span>
-            <div>
-                <h3>Sube una imagen</h3>
-                <p>Captura tu placa Petri y carga la fotografía en la plataforma.</p>
-            </div>
-        </article>
-        <article class="process-step">
-            <span class="process-number">02</span>
-            <div>
-                <h3>Deja que BioConteo analice</h3>
-                <p>El sistema identifica las colonias y organiza el conteo automáticamente.</p>
-            </div>
-        </article>
-        <article class="process-step">
-            <span class="process-number">03</span>
-            <div>
-                <h3>Obtén una respuesta clara</h3>
-                <p>Consulta UFC/mL, guarda la muestra y genera un reporte cuando lo necesites.</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-</div>
-</div>
-
+<!-- Pie de página -->
 <footer class="site-footer">
+
     <div class="footer-content">
+
         <div class="footer-main">
+
+            <!-- Identidad -->
             <div class="footer-brand-block">
-                <a class="footer-brand" href="index.html"><img src="img/Logo1.jpeg" alt="">Microdetect</a>
-                <p>Tecnología que acompaña la ciencia. Herramientas digitales para apoyar el análisis microbiológico.</p>
+
+                <a class="footer-brand" href="index.html">
+                    <img src="img/Logo1.png" alt="Logo de Microdetect">
+                    Microdetect
+                </a>
+
+                <p>
+                    Tecnología que acompaña la ciencia. Herramientas digitales
+                    para apoyar el análisis microbiológico.
+                </p>
+
             </div>
+
+            <!-- Enlaces -->
             <div class="footer-link-block">
+
                 <h2>Explora</h2>
+
                 <nav aria-label="Enlaces del pie de página">
+
                     <a href="index.html">Inicio</a>
                     <a href="views/quienes-somos.html">Quiénes somos</a>
                     <a href="views/servicios.html">Servicios</a>
                     <a href="views/descargar.html">Descargar app</a>
+
                 </nav>
+
             </div>
+
+            <!-- Contacto -->
             <div class="footer-contact-block">
+
                 <h2>¿Tienes dudas?</h2>
-                <p>Estamos aquí para ayudarte a conocer Microdetect.</p>
-                <a class="footer-contact-link" href="views/contactanos.html">Contáctanos <span aria-hidden="true">→</span></a>
+
+                <p>
+                    Estamos aquí para ayudarte a conocer Microdetect.
+                </p>
+
+                <div class="footer-contact-actions">
+
+                    <a
+                        class="footer-contact-link"
+                        href="views/quienes-somos.html"
+                    >
+                        Quiénes somos
+                    </a>
+
+                    <a
+                        class="footer-contact-link"
+                        href="views/contactanos.html"
+                    >
+                        Contáctanos <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
             </div>
+
         </div>
+
+        <!-- Derechos reservados -->
         <div class="footer-bottom">
-            <small>&copy; 2026 Microdetect. Todos los derechos reservados.</small>
-            <span>Hecho para apoyar el trabajo microbiológico</span>
+
+            <small>
+                &copy; 2026 Microdetect. Todos los derechos reservados.
+            </small>
+
+            <span>
+                Hecho para apoyar el trabajo microbiológico
+            </span>
+
         </div>
+
     </div>
+
 </footer>
 
-    <!-- Bootstrap JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
