@@ -13,48 +13,33 @@
     <div data-navbar></div>
 
     <main class="about-page">
-        <section class="about-hero" aria-labelledby="about-title">
-            <div class="about-hero-copy">
-                <p class="eyebrow">CIENCIA, TECNOLOGÍA Y MICROBIOLOGÍA</p>
-                <h1 id="about-title">La ciencia merece herramientas <span>más simples.</span></h1>
-                <p>Somos un proyecto que convierte tareas de laboratorio en procesos más claros, ágiles y fáciles de consultar.</p>
-                <a class="hero-button hero-button-primary" href="views/servicios.html">Conoce lo que hacemos</a>
-            </div>
-            <div class="about-hero-art" aria-hidden="true">
-                <div class="about-art-glow"></div>
-                <div class="about-art-card">
-                    <span class="about-art-label">MICROBIOLOGÍA DIGITAL</span>
-                    <div class="about-petri">
-                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-                    </div>
-                    <strong>Observa. Analiza. Comprende.</strong>
-                </div>
-                <span class="about-art-badge">Tecnología para el laboratorio</span>
-            </div>
-        </section>
-
         <section class="about-story" aria-labelledby="about-story-title">
-            <div class="about-story-heading">
-                <p class="eyebrow">CONOCE MICRODETECT</p>
-                <h2 id="about-story-title">Una idea con propósito</h2>
-            </div>
-            <div class="about-card-grid">
-                <article class="about-info-card">
-                    <span class="about-card-icon" aria-hidden="true">◎</span>
-                    <h2>¿Qué es Microdetect?</h2>
-                    <p>Una aplicación de apoyo para analizar fotografías de placas Petri, contar colonias bacterianas y organizar los datos de cada muestra.</p>
-                </article>
-                <article class="about-info-card">
-                    <span class="about-card-icon" aria-hidden="true">✳</span>
-                    <h2>¿A qué nos dedicamos?</h2>
-                    <p>Desarrollamos herramientas digitales que ayudan a simplificar tareas del análisis microbiológico, como el conteo y la consulta de resultados.</p>
-                </article>
-                <article class="about-info-card">
-                    <span class="about-card-icon" aria-hidden="true">↗</span>
-                    <h2>Nuestro propósito</h2>
-                    <p>Queremos que el trabajo con muestras sea más ágil y que la información obtenida resulte práctica para revisar y compartir.</p>
-                </article>
-            </div>
+            <section class="about-mission" aria-labelledby="about-mission-title">
+                <div class="about-mission-copy">
+                    <p class="eyebrow">NUESTRO ENFOQUE</p>
+                    <h2 id="about-mission-title">Tecnología pensada para el trabajo microbiológico</h2>
+                    <p>MicroDetect es un proyecto de desarrollo de software especializado en el ámbito microbiológico, integrado por una aplicación móvil y un sitio web informativo. Su desarrollo contempla la combinación de tecnologías digitales para atender las necesidades de registro y documentación de muestras en el entorno de laboratorio.</p>
+                    <p>La aplicación móvil constituye el componente principal del sistema, mientras que el sitio web funciona como medio de presentación del proyecto, donde se exponen sus características, funcionamiento y planes disponibles. 
+                    Ambos componentes forman parte de una misma propuesta tecnológica, con una estructura diseñada para ofrecer una experiencia clara y accesible a sus usuarios.</p>
+                </div>
+                <div class="about-principles">
+                    <article class="about-principle">
+                        <span class="about-principle-number">01</span>
+                        <div>
+                            <h3>Nuestra misión</h3>
+                            <p>Facilitar la detección y el conteo de colonias bacterianas mediante una herramienta tecnológica que analiza imágenes de cajas Petri con inteligencia artificial. Buscamos automatizar este proceso para reducir el tiempo y los errores del conteo manual, ofreciendo resultados precisos y confiables. También proporcionamos herramientas para organizar, consultar y dar seguimiento a los resultados, haciendo que el análisis microbiológico sea más práctico y eficiente para estudiantes, investigadores y profesionales.</p>
+                        </div>
+                    </article>
+                    <article class="about-principle">
+                        <span class="about-principle-number">02</span>
+                        <div>
+                            <h3>Nuestra visión</h3>
+                            <p>Posicionar a MICRODETECT como una herramienta tecnológica innovadora y reconocida en el ámbito microbiológico, destacándose por facilitar la detección y el conteo de colonias bacterianas mediante inteligencia artificial. A futuro, buscamos mejorar continuamente la plataforma, incorporar nuevas funciones y ampliar sus posibilidades de uso, contribuyendo a que los procesos de análisis microbiológico sean cada vez más rápidos, precisos y eficientes.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
         </section>
     </main>
 
@@ -62,14 +47,13 @@
         <div class="footer-content">
             <div class="footer-main">
                 <div class="footer-brand-block">
-                    <a class="footer-brand" href="index.html"><img src="img/Logo1.jpeg" alt="">Microdetect</a>
+                    <a class="footer-brand" href="index.html"><img src="img/Logo1.png" alt="">Microdetect</a>
                     <p>Tecnología que acompaña la ciencia. Herramientas digitales para apoyar el análisis microbiológico.</p>
                 </div>
                 <div class="footer-link-block">
                     <h2>Explora</h2>
                     <nav aria-label="Enlaces del pie de página">
                         <a href="index.html">Inicio</a>
-                        <a href="views/quienes-somos.html">Quiénes somos</a>
                         <a href="views/servicios.html">Servicios</a>
                         <a href="views/descargar.html">Descargar app</a>
                     </nav>
@@ -77,7 +61,10 @@
                 <div class="footer-contact-block">
                     <h2>¿Tienes dudas?</h2>
                     <p>Estamos aquí para ayudarte a conocer Microdetect.</p>
-                    <a class="footer-contact-link" href="views/contactanos.html">Contáctanos <span aria-hidden="true">→</span></a>
+                    <div class="footer-contact-actions">
+                        <a class="footer-contact-link" href="views/quienes-somos.html">Quiénes somos</a>
+                        <a class="footer-contact-link" href="views/contactanos.html">Contáctanos <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
